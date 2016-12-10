@@ -1,0 +1,23 @@
+.large-hero {
+	position: relative;
+	margin-top: 70px;
+
+	
+
+
+	@mixin atMedium {
+		border-bottom: 10px solid #000000;
+	}
+
+	@mixin atSmall {
+		border-bottom: 30px solid #000000;
+	}
+	
+	
+
+	&__image {
+		display: block;
+		height: 100%;
+		
+	}
+}

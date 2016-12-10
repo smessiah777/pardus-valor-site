@@ -1,0 +1,173 @@
+.site-header {
+	padding: 10px 0;
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 70px;
+	top: 0;
+	z-index: 2;
+	background-color: $mainBlue;
+	
+
+	
+	&__menu-icon {  		
+		width: 20px;
+		height: 19px;
+		line-height: 10px;
+		position: absolute;
+		z-index: 10;
+		top: 30px;
+		left: 15px;
+		cursor: pointer;
+
+		@mixin atMedium {
+			top: 40px;
+			left: 40px;
+		}
+
+
+		&__top {
+			position: absoulte;
+			display: block;
+			top:0;
+			left:0;
+			width: 20px;
+			height: 3px;
+			background-color: #FFF;
+		} 
+
+		&__middle {
+			position: absoulte;
+			display: block;
+			top:8;
+			left:0;
+			width: 20px;
+			height: 3px;
+			background-color: $mainPink;
+		} 
+
+		&__bottom {
+			position: absoulte;
+			display:block;
+			top:10;
+			left:0;
+			width: 20px;
+			height: 3px;
+			background-color: #FFF;
+		} 
+	}
+
+
+	&__menu-content {
+		position: fixed;
+		z-index: 100000; 
+		background-color: $mainPink;
+		display: block;
+		padding: 10px;
+		width: 100%;
+		height: 70px;
+		opacity: 0;
+		visibility: hidden;
+		transition: 0.5s;
+
+		@mixin atMedium {
+			position: fixed;
+			top: 0;
+			left: -50%;
+			height: 100%;
+			width: 395px;
+			background-color: $mainPink;
+			opacity: 0;
+			visibility: hidden;
+			transition: 0.5s;
+
+		}
+
+		&--is-visible {
+			opacity: 1;
+			visibility: visible;
+			left: 0;
+		}
+
+		&--icon-side {
+			position: fixed;
+			display: block;
+			left: 300px;
+			top: 20px;
+			float: right;
+			font-size: 2rem;
+			color: $mainBlue;
+			border: solid $mainBlue 1px;
+			padding: 0px;
+			z-index: 100000;
+			cursor: pointer;
+			
+
+			@mixin atTablet {
+				position: fixed;
+				display: block;
+				left: 735px;
+				top: 20px;
+				font-size: 2rem;
+				color: $mainBlue;
+				border: solid $mainBlue 2px;
+				padding: 0px;
+				z-index: 100000;
+				cursor: pointer;
+				transform: scaleX(3);
+
+			}
+			
+
+			@mixin atMedium {
+				position: fixed;
+				display: block;
+				left: 320px;
+				top: 50px;
+				font-size: 2.5rem;
+				color: #FFF;
+				border: solid #FFF 2px;
+				padding: 0px;
+				z-index: 100000;
+				cursor: pointer;
+				transform: scaleX(2);
+			}
+
+		}
+
+		&--icon-side:hover {
+			color: rgba($mainBlue,.55);
+			border: solid $mainBlue 2px;
+			transition: 0.8s;
+			transform: scaleX(0.8);
+			
+		}
+		
+		
+	}
+
+
+	@mixin atMedium{
+			&__menu-overlay {
+
+			    background: rgba(23, 51, 72, .98);
+			    width: 100%;
+			    height: 100%;
+			    position: fixed;
+			    top: 0px;
+			    left: 0px;
+			    z-index: 100000;
+			    visibility: hidden;
+			    display: none;
+
+		    	&--is-visible {
+					opacity: 1;
+					visibility: visible;
+					display: block;
+					z-index: 100000;
+					transform: scale(1);
+				}
+			}
+		}
+
+}

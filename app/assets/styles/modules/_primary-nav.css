@@ -1,0 +1,53 @@
+.primary-nav {
+	display: none;
+
+	&--pull-r{
+		@mixin atMedium{
+			float: right;
+		}
+		
+	}
+	
+	ul {
+	  margin: 0;
+	  padding: 0;
+	  text-align: center;
+	  @mixin clearfix;
+	}
+
+	li {
+	  list-style: none;
+	  display: inline-block;
+	  padding-right: 20px;
+	  text-align: center;
+	  
+	}
+
+	li:last-child {
+		padding-right: 0;
+		@mixin atMedium {
+			padding-right: 20px;
+		}
+	}
+
+	a {
+	  color: #FFF;
+	  text-decoration: none;
+	  display: block;
+	  padding: 5px 8px;
+	  font-size: 2rem;
+	  text-align: center;
+	  
+
+	  @mixin atMedium {
+	  	font-size: 3rem;
+	  }
+	 }
+
+	a:hover {
+		color: $mainPink;
+		text-decoration: wavy;
+		transition: 0.8s ease; 
+	}
+
+}
