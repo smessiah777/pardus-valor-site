@@ -1,20 +1,39 @@
 .social-icons {
-	margin:100px auto 300px auto
+		
+	
+	ul{
+		margin-right: auto;
+		margin-left: auto;
+	}
 
-	a {
-		font-size: 80px;
+	li{
 		display: inline-block;
-		padding: 0 40px;
-		text-align: center; 
+		margin-right: auto;
+		margin-left: auto;
+
+	 @mixin atMedium {
+	 	padding-right: 20px;
+	 }
+	}
+	
+	a {
+		
+		font-size: 3rem;
+		padding: 0 20px;
+		text-align: center;
+		display: inline-block; 
+		margin-right: auto;
+		margin-left: auto;
 		transition: all 0.3s ease;
+
+	@mixin atMedium {
+		font-size: 5rem;
+		padding: 0 40px;
 	}
 
-	&--block {
-		width: 20%;
-		float: left;
-		padding: 0;
-		margin: auto;
+
 	}
+
 
 
 }

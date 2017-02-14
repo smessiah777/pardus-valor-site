@@ -27,12 +27,11 @@
 		
 
 		@mixin atMedium {
-			top: 0;
-			list-style: none;
-	  		display: list-item;
-	  		line-height: 100;
-
-	  		float: left;
+			
+			
+	  		
+	  		
+	  		
 	  	}
 	}
 
@@ -56,10 +55,10 @@
 	    }
 
 	  	@mixin atMedium {
-	  		font-size: 4rem;
+	  		font-size: 2rem;
 	  		font-weight: 700;
 	  		padding: 12px 0;
-	  		background-color: transparent;
+		    background-color: transparent;
 	  		transition: 0.5s ease;
 	  		transform: scale(1,1); 
 		}
@@ -84,9 +83,24 @@
 			width: 345px;
 			margin-top: 200px;
 			margin-left: 20px;	
-			
+		}
+
 	}
 
+
+	&--social-icons {
+		visibility: hidden;
+		  
+		  @mixin atMedium {
+		  	visibility: visible;	
+			display: inline-block;
+		    font-size: 2rem;
+		    margin-right: auto;
+		    margin-left: auto;
+		    top: 100px;
+		    padding: 0px 45px;
+    		margin: 15px 0;
+    		}
 	}
 
 

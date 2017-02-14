@@ -24,3 +24,21 @@ a {
 h1 {
 	text-align: center;
 }
+
+.h1-white {
+	color: #FFF;
+	font-size: 2rem;
+ 
+ @mixin atMedium {
+ 		font-size: 4rem;
+ }
+}
+
+.h1-pink {
+	color: $mainPink;
+	font-size: 2rem;
+ 
+ @mixin atMedium {
+ 		font-size: 4rem;
+ }
+}

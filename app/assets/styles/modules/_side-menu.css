@@ -1,23 +1,23 @@
 .side-menu {
-
-	
-	&__content {
 		position: fixed;
-		top: 0 px;
+		top: 0;
 		left: -50%;
 		z-index: 100000; 
 		background-color: $mainPink;
 		background-size: 32%;
 		height: 100%;
 		width: 395px;
-		opacity: 0;
+	
+	&__content {
+			opacity: 0;
 		visibility: hidden;
-		transition: 0.5s;
+		
 
 		&--is-visible {
 			opacity: 1;
 			visibility: visible;
 			left: 0;
+			transition: 0.5s;
 		}
 
 	&__icon-side {
