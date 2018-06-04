@@ -1,8 +1,7 @@
 .large-hero {
 	position: relative;
-	margin-top: 70px;
 
-	
+
 
 
 	@mixin atMedium {
@@ -12,12 +11,14 @@
 	@mixin atSmall {
 		border-bottom: 30px solid #000000;
 	}
-	
-	
+
+
 
 	&__image {
-		display: block;
-		height: 100%;
-		
-	}
+		display: block; 
+		background-size: cover;
+		background-position: center;
+		height: 100vh;
+		width: 100vw;
+		}
 }

@@ -1,40 +1,69 @@
 .site-header {
-	padding: 10px 0;
 	position: fixed;
 	display: block;
 	width: 100%;
 	height: 70px;
 	top: 0;
 	z-index: 2;
-	background-color: $mainBlue;
-	
 
-	
-	&__menu-icon {  		
-		width: 20px;
+
+
+
+
+	&__menu-icon {
+
+		width: 60px;
 		height: 19px;
-		font-size: 	1.375rem;
+		font-size: 	1.875rem;
 		line-height: 10px;
 		position: absolute;
 		z-index: 10;
 		top: 30px;
 		left: 15px;
+		color: $mainPink;
 		cursor: pointer;
 
-		@mixin atMedium {
-			top: 30px;
-			left: 40px;
-			font-size: 2rem;
+		@mixin atLarge {
+			font-size: 	2.75rem;
+			}
+
+		&__top {
+
+			position: absoulte;
+			top:0;
+			left:0;
+			width: 60px;
+			height: 3px;
+			margin-bottom: 5px;
+			background-color: #FFF;
 		}
 
+		&__middle {
+			position: absoulte;
+			top:8;
+			left:0;
+			width: 60px;
+			height: 3px;
+			margin-bottom: 5px;
+			background-color: #FFF;
+		}
 
-		
+		&__bottom {
+
+			position: absoulte;
+			bottom:0;
+			left:0;
+			width: 60px;
+			height: 3px;
+			background-color: #FFF;
+		}
 	}
+
 
 
 	&__menu-content {
 		position: fixed;
-		z-index: 100000; 
+		z-index: 100000;
 		background-color: $mainPink;
 		display: block;
 		padding: 10px;
@@ -75,7 +104,7 @@
 			padding: 0px;
 			z-index: 100000;
 			cursor: pointer;
-			
+
 
 			@mixin atTablet {
 				position: fixed;
@@ -91,7 +120,7 @@
 				transform: scaleX(3);
 
 			}
-			
+
 
 			@mixin atMedium {
 				position: fixed;
@@ -114,10 +143,10 @@
 			border: solid $mainBlue 2px;
 			transition: 0.8s;
 			transform: scaleX(0.8);
-			
+
 		}
-		
-		
+
+
 	}
 
 

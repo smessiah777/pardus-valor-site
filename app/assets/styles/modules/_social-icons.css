@@ -1,6 +1,35 @@
-.social-icons {
-		
-	
+.social-icons{
+
+		&-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			flex-wrap: wrap;
+
+
+			@mixin atLarge{
+				flex-direction: row;
+			}
+
+
+
+						&-1{
+
+						}
+						&-2{
+
+						}
+						&-3{
+
+						}
+						&-4{
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+
+						}
+		}
+
 	ul{
 		margin-right: auto;
 		margin-left: auto;
@@ -15,13 +44,13 @@
 	 	padding-right: 20px;
 	 }
 	}
-	
+
 	a {
-		
+
 		font-size: 3rem;
 		padding: 0 20px;
 		text-align: center;
-		display: inline-block; 
+		display: inline-block;
 		margin-right: auto;
 		margin-left: auto;
 		transition: all 0.3s ease;
